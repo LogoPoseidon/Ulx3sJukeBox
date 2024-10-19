@@ -46,7 +46,7 @@ convert_pcm_to_hex.c:
 
 1. Loading Songs on SD Card:
         The system expects audio data in 8-bit signed PCM format (32kHz), stored in specific sectors of the SD card. The songs must be written to the card Define the Songstart Sector for each Song in SDKarteLeser:
-            ```Sector = 32000/512*(60*SongstartMin+SongstartSec)``
+        ```Sector = 32000/512*(60*SongstartMin+SongstartSec)``
         and the end of Song7 with the same formula.
 
 1. Button Controls:
