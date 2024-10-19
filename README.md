@@ -46,7 +46,7 @@ convert_pcm_to_hex.c:
 
 1. Loading Songs on SD Card:
         The system expects audio data in 8-bit signed PCM format (32kHz), stored in specific sectors of the SD card. The songs must be written to the card Define the Songstart Sector for each Song in SDKarteLeser:
-    ```Sector = 32000/512*(60*SongstartMin+SongstartSec)``
+    ```Sector = 32000/512*(60*SongstartMin+SongstartSec)```
     and the end of Song7 with the same formula.
 
 1. Button Controls:
@@ -55,7 +55,7 @@ convert_pcm_to_hex.c:
     ```gcc convert_pcm_to_hex.c -o convert_pcm_to_hex```
     Then run it to convert a raw PCM file to a .hex file:
     ```./convert_pcm_to_hex```
-    
+
 1. Programming the FPGA: Ensure that all Verilog files are included in your FPGA synthesis tool (like Yosys, nextpnr) and upload the bitstream to the ULX3S FPGA.
 
 ## Future Improvements
