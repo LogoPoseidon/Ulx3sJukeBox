@@ -10,8 +10,9 @@ This project is an audio playback system built on the ULX3S FPGA. It reads audio
         Audio playback control through a simple clock divider to generate a 32kHz sample rate.
         Integration of the SD card reader and DAC.
 
-1. SDKarte.v:
+1. SDKartenLeser.v:
         The SD card management module. This handles reading data from specific sectors of the SD card (songs) and passing it to a FIFO queue for playback.
+        Song management, Button and LED Controll.
 
 1. sd_controller.v:
         A lower-level module responsible for the communication with the SD card via SPI. It manages SD card reads and provides the data to SDKarte.
